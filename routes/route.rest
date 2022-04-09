@@ -1,0 +1,30 @@
+// Get all Persons
+GET http://localhost:3000/persons
+
+###
+// Get individual Person
+GET http://localhost:3000/persons/62514abaa636a2aeafafb5ae
+
+
+###
+// Create a Person
+POST http://localhost:3000/persons
+Content-Type: application/json
+
+{
+    "name":"Mythireyan.P",
+    "age":22
+}
+
+###
+//Delete a Person
+DELETE http://localhost:3000/persons/62514b0b64e728dbbaec7121
+
+### 
+// Edit a Person
+PATCH http://localhost:3000/persons/62514abaa636a2aeafafb5ae
+Content-Type: application/json
+
+{
+    "name": "Mythireyan Prabhu"
+}
